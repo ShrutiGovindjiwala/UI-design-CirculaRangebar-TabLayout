@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/apppref"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="76dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F4F4"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alertLayout"
+            android:background="@drawable/curve"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/textAlert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Alerts"
+                android:textColor="#7c223f"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchAlerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sound"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:textColor="	#979797"
+                android:checked="true"
+                app:track="@drawable/switch_design"
+                android:thumb="@drawable/thumb_design"
+                android:height="30dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alert"
+            android:textColor="#6e6e6e"
+            android:textSize="11sp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="8dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/matchLayout"
+            android:background="@drawable/pink"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:id="@+id/textMatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Matchmaker-Only Mode"
+                android:textColor="#7c223f"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/matchMaker"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:text="Hide My Profile"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:textColor="	#979797"
+                app:track="@drawable/switch_design"
+                android:thumb="@drawable/thumb_design"
+                android:height="30dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/matchmaker"
+            android:textColor="#6e6e6e"
+            android:textSize="11dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="8dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pink"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/textLang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select Language"
+                android:textColor="#7c223f"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="243dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Language"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:columnCount="5"
+                    android:rowCount="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="3"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:text="English"
+                        android:textSize="13sp"
+                        android:layout_columnWeight="3"></TextView>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_column="4"
+                        android:layout_gravity="center|right"
+                        android:src="@drawable/select"></ImageView>
+                </GridLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/language"
+            android:textColor="#6e6e6e"
+            android:textSize="13sp"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="8dp">
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

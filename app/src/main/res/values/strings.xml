@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Preferences</string>
+    <string name="age_preference">Age range preference allows us to suggest matches accordingly. Some matches may fall outside the specified range.</string>
+    <string name="alert">We strongly recommend to keep the notification ON. You dont want to miss a chat notification from your match.</string>
+    <string name="matchmaker">Here to only help friends? Just hide your profile and be a matchmaker.</string>
+    <string name="language">Please select your language of choice.The language changes will take place once you go to the home screen.</string>
+</resources>

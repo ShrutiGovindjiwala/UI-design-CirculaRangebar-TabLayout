@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="50dp"
+    android:background="@drawable/toast_back"
+    android:alpha="0.9">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="You will not appear as a potential suggestion for others. You will only be a matchmaker."
+        android:textColor="@android:color/white"
+        android:padding="10dp"></TextView>
+
+</LinearLayout>
